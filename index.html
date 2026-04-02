@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammet Bashimov | Backend Developer</title>
-    <link rel="stylesheet" href="style.css?v=10">
+    <title>Muhammet Bashimov | Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=11">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">MB.</a>
+            <a href="#" class="nav-logo">MB<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,93 +23,101 @@
 
     <header class="hero">
         <div class="hero-container">
-            <div class="hero-content">
+            <div class="hero-text">
                 <h1>Muhammet Bashimov</h1>
-                <p class="subtitle">C# Backend Developer | Master's Student at UTCN</p>
-                <p class="hero-motto">"Ducunt volentem fata, nolentem trahunt."</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn-primary">View My Work</a>
-                    <a href="https://github.com/Muhash123" class="btn-secondary">GitHub</a>
+                <p class="subtitle">C# Backend Developer | UTCN Master's Student</p>
+                <p class="motto">"Ducunt volentem fata, nolentem trahunt."</p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-certificate"></i> MFA Scholar</span>
+                    <span class="badge"><i class="fas fa-language"></i> B1 Romanian</span>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="https://github.com/Muhash123.png" alt="Muhammet Bashimov" class="profile-img">
+            <div class="photo-wrapper">
+                <div class="insta-ring">
+                    <img src="https://github.com/Muhash123.png" alt="Muhammet Bashimov" class="profile-photo">
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="projects" class="section-padding">
-            <h2 class="section-title">Technical Portfolio</h2>
+        <section id="projects" class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> Technical Portfolio</h2>
             <div class="project-grid">
                 <div class="project-card">
                     <div class="card-chip"></div>
-                    <h3>Real Estate API (Clean Architecture)</h3>
-                    <p>Modern Web API using Clean Architecture and CQRS patterns with MediatR.</p>
+                    <h3>Real Estate (Clean Arch)</h3>
+                    <p>Enterprise-level API using CQRS and MediatR[cite: 39, 42].</p>
                     <div class="card-footer">
                         <span class="tech-tag">.NET 8</span>
-                        <a href="https://github.com/Muhash123/RealEstate" class="btn-card">Source</a>
+                        <a href="https://github.com/Muhash123/RealEstate" class="source-link">Source <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="card-chip"></div>
-                    <h3>High-Performance API</h3>
-                    <p>Built with .NET 9 and Dapper for optimized PostgreSQL queries.</p>
+                    <h3>High-Perf API</h3>
+                    <p>Performance optimization with Dapper and PostgreSQL[cite: 34, 35].</p>
                     <div class="card-footer">
-                        <span class="tech-tag">.NET 9 / Dapper</span>
-                        <a href="https://github.com/Muhash123/RealEstateApi" class="btn-card">Source</a>
+                        <span class="tech-tag">.NET 9</span>
+                        <a href="https://github.com/Muhash123/RealEstateApi" class="source-link">Source <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="card-chip"></div>
-                    <h3>Shop Management System</h3>
-                    <p>RESTful API with JWT Authentication and Role-Based Access Control.</p>
+                    <h3>Shop Management</h3>
+                    <p>Secure REST API with JWT and RBAC implementation[cite: 19, 22].</p>
                     <div class="card-footer">
-                        <span class="tech-tag">JWT / SQL</span>
-                        <a href="https://github.com/Muhash123/Shop.git" class="btn-card">Source</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-chip"></div>
-                    <h3>Portfolio & CMS</h3>
-                    <p>Dynamic blog engine using ASP.NET Core MVC and EF Core.</p>
-                    <div class="card-footer">
-                        <span class="tech-tag">MVC / EF</span>
-                        <a href="https://github.com/Muhash123/CV_Proyekt" class="btn-card">Source</a>
+                        <span class="tech-tag">SQL Server</span>
+                        <a href="https://github.com/Muhash123/Shop.git" class="source-link">Source <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section-padding">
-            <h2 class="section-title">Professional Background</h2>
-            <div class="about-glass">
-                <p>After nearly a decade in education, I shifted focus to software system logic.</p>
-                <p>Currently a Master's student at UTCN and MFA Scholarship recipient.</p>
-                <p>B1 Romanian proficiency and a disciplined learner.</p>
+        <section id="education" class="section">
+            <h2 class="section-title"><i class="fas fa-user-graduate"></i> Education & Training</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">2024 - Present</span>
+                    <h4>MSc. Computer Science</h4>
+                    <p>Technical University of Cluj-Napoca (UTCN) [cite: 14]</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2014 - 2015</span>
+                    <h4>Scientific Translation</h4>
+                    <p>Dnipropetrovsk National University of Railway Transport [cite: 74]</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2010 - 2014</span>
+                    <h4>Bc. Philology</h4>
+                    <p>East Ukrainian State University [cite: 71]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title"><i class="fas fa-info-circle"></i> Professional Bio</h2>
+            <div class="glass-box">
+                <p>After 9 years in education, I transitioned to backend systems to focus on logic and architecture[cite: 13, 17]. Currently an MFA Scholarship recipient at UTCN[cite: 66, 67].</p>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>Let's Connect</h3>
-                <p><i class="fas fa-envelope"></i> ahmedowahmet475@gmail.com</p>
-                <p><i class="fas fa-phone"></i> (+40) 772 004 916</p>
-                <p><i class="fas fa-location-dot"></i> Cluj-Napoca, Romania</p>
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-envelope"></i> ahmedowahmet475@gmail.com [cite: 8]</p>
+                <p><i class="fas fa-phone"></i> (+40) 772 004 916 [cite: 8]</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cluj-Napoca, Romania [cite: 10]</p>
             </div>
-            <div class="footer-social">
+            <div class="social-links">
                 <a href="https://github.com/Muhash123"><i class="fab fa-github"></i></a>
-                <a href="https://muhash123.github.io/"><i class="fas fa-globe"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Muhammet Bashimov | Built with ASP.NET Core Mindset</p>
-        </div>
+        <p class="copyright">&copy; 2026 Muhammet Bashimov</p>
     </footer>
 
 </body>
