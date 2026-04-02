@@ -3,82 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammet Bashimov | Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=15">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Muhammet Bashimov | muhammet.dev</title>
+    <link rel="stylesheet" href="style.css?v=17">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">MB<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#projects">Portfolio</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="container">
+            <a href="#" class="logo">muhammet<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="#projects">Portfolio</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-container">
+        <div class="container hero-grid">
             <div class="hero-text">
+                <p class="greeting">Hi, I am</p>
                 <h1>Muhammet Bashimov</h1>
-                <p class="subtitle">C# Backend Developer | UTCN Master's Student</p>
-                <p class="motto">"Ducunt volentem fata, nolentem trahunt."</p>
+                <p class="subtitle">C# Backend Developer & UTCN Master's Student</p>
+                <blockquote class="motto">"Ducunt volentem fata, nolentem trahunt."</blockquote>
                 <div class="hero-badges">
+                    <span class="badge blue"><i class="fas fa-check-circle"></i> Clean Code</span>
+                    <span class="badge"><i class="fab fa-microsoft"></i> .NET 9</span>
                     <span class="badge"><i class="fas fa-certificate"></i> MFA Scholar</span>
-                    <span class="badge"><i class="fas fa-language"></i> B1 Romanian</span>
                 </div>
             </div>
-            <div class="photo-wrapper">
-                <img src="https://github.com/Muhash123.png" alt="Muhammet Bashimov" class="github-photo">
+            <div class="hero-img-side">
+                <img src="https://github.com/Muhash123.png" alt="Muhammet Bashimov" class="profile-circle">
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section id="projects" class="section">
-            <h2 class="section-title"><i class="fas fa-layer-group"></i> Technical Portfolio</h2>
+            <h2 class="section-title">Technical Projects</h2>
             <div class="project-grid">
                 
-                <a href="https://github.com/Muhash123/RealEstate" class="project-card">
+                <a href="https://github.com/Muhash123/RealEstate" class="card">
                     <div class="card-header">
-                        <div class="card-chip"></div>
-                        <i class="fas fa-city card-icon"></i>
+                        <div class="chip"></div>
+                        <i class="fas fa-city icon"></i>
                     </div>
                     <h3>Real Estate (Clean Arch)</h3>
-                    <p>Modern Web API built with Clean Architecture and CQRS patterns using MediatR.</p>
+                    <p>Enterprise API using CQRS and MediatR to ensure decoupled, maintainable layers.</p>
                     <div class="card-footer">
-                        <span class="tech-tag">.NET 8</span>
-                        <span class="view-text">Source <i class="fas fa-external-link-alt"></i></span>
+                        <span class="tag">Architecture</span>
+                        <span class="btn-text">Source <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
-                <a href="https://github.com/Muhash123/RealEstateApi" class="project-card">
+                <a href="https://github.com/Muhash123/RealEstateApi" class="card">
                     <div class="card-header">
-                        <div class="card-chip"></div>
-                        <i class="fas fa-bolt card-icon"></i>
+                        <div class="chip"></div>
+                        <i class="fas fa-bolt icon"></i>
                     </div>
-                    <h3>High-Perf API</h3>
-                    <p>Performance-focused API using .NET 9 and Dapper for optimized PostgreSQL queries.</p>
+                    <h3>High-Performance API</h3>
+                    <p>Performance-optimized backend using Dapper and .NET 9 for raw SQL efficiency.</p>
                     <div class="card-footer">
-                        <span class="tech-tag">.NET 9</span>
-                        <span class="view-text">Source <i class="fas fa-external-link-alt"></i></span>
+                        <span class="tag">Performance</span>
+                        <span class="btn-text">Source <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
-                <a href="https://github.com/Muhash123/Shop.git" class="project-card">
+                <a href="https://github.com/Muhash123/Shop.git" class="card">
                     <div class="card-header">
-                        <div class="card-chip"></div>
-                        <i class="fas fa-shopping-cart card-icon"></i>
+                        <div class="chip"></div>
+                        <i class="fas fa-shield-alt icon"></i>
                     </div>
                     <h3>Shop Management</h3>
-                    <p>Secure RESTful API featuring JWT Authentication and Role-Based Access Control.</p>
+                    <p>Secure E-commerce API with JWT Authentication and Role-Based Access Control.</p>
                     <div class="card-footer">
-                        <span class="tech-tag">SQL Server</span>
-                        <span class="view-text">Source <i class="fas fa-external-link-alt"></i></span>
+                        <span class="tag">Security</span>
+                        <span class="btn-text">Source <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Muhash123/CV_Proyekt" class="card">
+                    <div class="card-header">
+                        <div class="chip"></div>
+                        <i class="fas fa-code icon"></i>
+                    </div>
+                    <h3>Portfolio & CMS</h3>
+                    <p>Dynamic engine built with ASP.NET Core MVC, handling content via SQL Server.</p>
+                    <div class="card-footer">
+                        <span class="tag">Full-Stack</span>
+                        <span class="btn-text">Source <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
@@ -86,43 +100,36 @@
         </section>
 
         <section id="education" class="section">
-            <h2 class="section-title"><i class="fas fa-user-graduate"></i> Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-timeline">
+                <div class="edu-node">
                     <span class="year">2024 - Present</span>
-                    <h4>MSc. Computer Science</h4>
+                    <h4>MSc in Computer Science</h4>
                     <p>Technical University of Cluj-Napoca (UTCN)</p>
                 </div>
-                <div class="timeline-item">
+                <div class="edu-node">
                     <span class="year">2010 - 2014</span>
-                    <h4>Bc. Philology</h4>
+                    <h4>Bc in Philology</h4>
                     <p>East Ukrainian State University</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <h2 class="section-title"><i class="fas fa-info-circle"></i> About Me</h2>
-            <div class="glass-container">
-                <p>After nine years in education, I transitioned to software development to focus on system logic. Currently a Master's student and MFA Scholarship recipient at UTCN.</p>
-                <p>I value clean, predictable code and have achieved B1 proficiency in the Romanian language.</p>
             </div>
         </section>
     </main>
 
     <footer id="contact">
-        <div class="footer-grid">
-            <div class="footer-contact">
+        <div class="container footer-flex">
+            <div class="contact-box">
                 <h3>Contact</h3>
                 <p><i class="fas fa-envelope"></i> ahmedowahmet475@gmail.com</p>
                 <p><i class="fas fa-phone"></i> (+40) 772 004 916</p>
-                <p><i class="fas fa-map-marker-alt"></i> Cluj-Napoca, Romania</p>
+                <p><i class="fas fa-location-arrow"></i> Cluj-Napoca, Romania</p>
             </div>
-            <div class="footer-social">
+            <div class="social-links">
                 <a href="https://github.com/Muhash123"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
+        <p class="copyright">&copy; 2026 muhammet.dev</p>
     </footer>
 
 </body>
