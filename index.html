@@ -3,84 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammet Bashimov | Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=9">
+    <title>Muhammet Bashimov | Backend Developer</title>
+    <link rel="stylesheet" href="style.css?v=10">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <div class="header-text">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">MB.</a>
+            <ul class="nav-links">
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
                 <h1>Muhammet Bashimov</h1>
                 <p class="subtitle">C# Backend Developer | Master's Student at UTCN</p>
-                <p class="motto">"Ducunt volentem fata, nolentem trahunt."</p>
+                <p class="hero-motto">"Ducunt volentem fata, nolentem trahunt."</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="https://github.com/Muhash123" class="btn-secondary">GitHub</a>
+                </div>
             </div>
-            <div class="photo-container">
-                <img src="https://github.com/Muhash123.png" alt="Muhammet Bashimov" class="profile-photo">
+            <div class="hero-image">
+                <img src="https://github.com/Muhash123.png" alt="Muhammet Bashimov" class="profile-img">
             </div>
         </div>
     </header>
 
     <main>
-        <section id="projects">
+        <section id="projects" class="section-padding">
             <h2 class="section-title">Technical Portfolio</h2>
             <div class="project-grid">
-
                 <div class="project-card">
                     <div class="card-chip"></div>
                     <h3>Real Estate API (Clean Architecture)</h3>
-                    <p>Modern Web API for real estate listings using Clean Architecture and CQRS patterns with MediatR.</p>
+                    <p>Modern Web API using Clean Architecture and CQRS patterns with MediatR.</p>
                     <div class="card-footer">
-                        <span class="tech-tag">.NET 8 / MediatR</span>
-                        <a href="https://github.com/Muhash123/RealEstate" class="btn-link">View Project</a>
+                        <span class="tech-tag">.NET 8</span>
+                        <a href="https://github.com/Muhash123/RealEstate" class="btn-card">Source</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="card-chip"></div>
-                    <h3>High-Performance Real Estate API</h3>
-                    <p>Performance-focused API built with .NET 9 and Dapper (Micro-ORM) for optimized PostgreSQL queries.</p>
+                    <h3>High-Performance API</h3>
+                    <p>Built with .NET 9 and Dapper for optimized PostgreSQL queries.</p>
                     <div class="card-footer">
                         <span class="tech-tag">.NET 9 / Dapper</span>
-                        <a href="https://github.com/Muhash123/RealEstateApi" class="btn-link">View Project</a>
+                        <a href="https://github.com/Muhash123/RealEstateApi" class="btn-card">Source</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="card-chip"></div>
-                    <h3>Shop Management System API</h3>
-                    <p>Secure RESTful API featuring JWT Authentication and Role-Based Access Control for e-commerce.</p>
+                    <h3>Shop Management System</h3>
+                    <p>RESTful API with JWT Authentication and Role-Based Access Control.</p>
                     <div class="card-footer">
-                        <span class="tech-tag">.NET 8 / JWT</span>
-                        <a href="https://github.com/Muhash123/Shop.git" class="btn-link">View Project</a>
+                        <span class="tech-tag">JWT / SQL</span>
+                        <a href="https://github.com/Muhash123/Shop.git" class="btn-card">Source</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="card-chip"></div>
-                    <h3>Portfolio & CMS (.NET MVC)</h3>
-                    <p>Dynamic blog engine built with ASP.NET Core MVC and SQL Server with a custom responsive UI.</p>
+                    <h3>Portfolio & CMS</h3>
+                    <p>Dynamic blog engine using ASP.NET Core MVC and EF Core.</p>
                     <div class="card-footer">
-                        <span class="tech-tag">MVC / EF Core</span>
-                        <a href="https://github.com/Muhash123/CV_Proyekt" class="btn-link">View Project</a>
+                        <span class="tech-tag">MVC / EF</span>
+                        <a href="https://github.com/Muhash123/CV_Proyekt" class="btn-card">Source</a>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="section-padding">
             <h2 class="section-title">Professional Background</h2>
             <div class="about-glass">
-                <p>After nearly a decade in the education sector, I transitioned into software development to focus on system logic.</p>
-                <p>Currently, I am a Master's student at UTCN and an MFA Scholarship recipient focusing on C# and Backend Development.</p>
-                <p>I value clean, predictable code and have achieved B1 proficiency in the Romanian language.</p>
+                <p>After nearly a decade in education, I shifted focus to software system logic.</p>
+                <p>Currently a Master's student at UTCN and MFA Scholarship recipient.</p>
+                <p>B1 Romanian proficiency and a disciplined learner.</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Muhammet Bashimov | Cluj-Napoca, Romania</p>
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Let's Connect</h3>
+                <p><i class="fas fa-envelope"></i> ahmedowahmet475@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (+40) 772 004 916</p>
+                <p><i class="fas fa-location-dot"></i> Cluj-Napoca, Romania</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Muhash123"><i class="fab fa-github"></i></a>
+                <a href="https://muhash123.github.io/"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Muhammet Bashimov | Built with ASP.NET Core Mindset</p>
+        </div>
     </footer>
 
 </body>
