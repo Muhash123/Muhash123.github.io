@@ -1,4 +1,4 @@
-/* Dark Theme Reset */
+/* Deep Dark Theme & Credit Card Style */
 * {
     margin: 0;
     padding: 0;
@@ -6,141 +6,159 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #0b0e14; /* Midnight Black */
+    color: #e6edf3;
     line-height: 1.6;
-    color: #e0e0e0;
-    background-color: #121212; /* Deep Black/Grey Background */
     padding: 40px 20px;
 }
 
-/* Header with Photo on the Right */
+/* Header: Text Left, Photo Right */
 header {
-    max-width: 1000px;
-    margin: 0 auto 60px;
-    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto 80px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
-.header-text {
-    flex: 1;
-    text-align: left;
-}
-
-header h1 {
-    font-size: 3rem;
-    color: #ffffff;
+.header-text h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #fff, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
 }
 
 .subtitle {
+    font-size: 1.4rem;
     color: #3498db;
-    font-size: 1.3rem;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
 .motto {
     font-style: italic;
-    color: #999;
-    font-size: 1.1rem;
-    border-left: 3px solid #3498db;
+    color: #8b949e;
+    border-left: 2px solid #3498db;
     padding-left: 15px;
 }
 
 .profile-photo {
     width: 200px;
     height: 200px;
-    border-radius: 15px; /* Squared with rounded corners */
+    border-radius: 20px; /* Modern Rounded Corners */
     object-fit: cover;
-    border: 3px solid #333;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid #30363d;
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.2);
 }
 
-/* Section Containers */
-section {
-    max-width: 1000px;
-    margin: 0 auto 40px;
-    background: #1e1e1e; /* Slightly lighter dark grey */
-    padding: 40px;
-    border-radius: 12px;
-    border: 1px solid #333;
-}
-
-h2 {
+/* Section Styling */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
     color: #ffffff;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
 }
 
-.about-content p {
-    margin-bottom: 20px;
-}
-
-/* Project Cards */
+/* Credit Card Style Projects */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .project-card {
-    background: #252525;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    transition: 0.3s;
+    background: linear-gradient(135deg, #1c2128 0%, #0d1117 100%);
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
+    transform: translateY(-10px) rotateX(5deg);
     border-color: #3498db;
-    transform: translateY(-5px);
-    background: #2a2a2a;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
-.project-card h3 {
-    color: #3498db;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    font-size: 0.95rem;
-    color: #bbb;
+.card-chip {
+    width: 45px;
+    height: 35px;
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    border-radius: 6px;
     margin-bottom: 20px;
 }
 
-.project-link {
+.project-card h3 {
+    font-size: 1.4rem;
     color: #3498db;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #8b949e;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    background: #21262d;
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: #3498db;
+}
+
+.btn-link {
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.85rem;
-    text-transform: uppercase;
+}
+
+/* About Section Glassmorphism */
+#about {
+    max-width: 800px;
+    margin: 100px auto 40px;
+}
+
+.about-glass {
+    background: rgba(48, 54, 61, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid #30363d;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
 }
 
 footer {
     text-align: center;
-    color: #666;
-    margin-top: 60px;
+    color: #484f58;
+    margin-top: 80px;
+    padding-bottom: 40px;
 }
 
-/* Responsive for Mobile */
+/* Responsive */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .header-text {
-        text-align: center;
-    }
-    .motto {
-        border-left: none;
-        border-top: 2px solid #3498db;
-        padding: 10px 0;
-    }
+    .header-text h1 { font-size: 2.5rem; }
 }
