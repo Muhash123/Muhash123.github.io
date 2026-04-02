@@ -1,58 +1,81 @@
-<section id="about">
-    <h2 class="section-heading">About Me</h2>
-    <div class="about-content">
-        <p>
-            I spent nearly a decade in classrooms, but I eventually realized that my real interest lay in the logic of the systems we use every day[cite: 12]. After nine years in education, I decided to start over[cite: 13]. 
-        </p>
-        <p>
-            Currently, I’m a Master’s student at <strong>UTCN</strong> and an <strong>MFA Scholarship recipient</strong>, focusing on <strong>C# and Backend Development</strong>. I am a disciplined learner; I spent the last year reaching <strong>B1 proficiency in Romanian</strong>, and I apply that same persistence to mastering <strong>ASP.NET Core, MediatR, and SQL</strong>.
-        </p>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammet Bashimov | Backend Developer</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
 
-<section id="projects">
-    <h2 class="section-heading">Technical Projects</h2>
-    <div class="project-grid">
-        
-        <div class="project-card">
-            <h3>Real Estate API (Clean Architecture)</h3>
-            <p>Developed a modern Web API using <strong>Clean Architecture</strong> and <strong>CQRS</strong> patterns[cite: 39, 40].</p>
-            <ul>
-                <li>Implemented CQRS using <strong>MediatR</strong> to separate read/write operations[cite: 42].</li>
-                <li>Organized decoupled layers for high maintainability[cite: 41].</li>
-            </ul>
-            <a href="https://github.com/Muhash123/RealEstate" class="project-link">View Repository</a>
-        </div>
+    <header>
+        <h1>Muhammet Bashimov</h1>
+        <p>C# Backend Developer | Master's Student at UTCN</p>
+    </header>
 
-        <div class="project-card">
-            <h3>High-Performance Real Estate API</h3>
-            <p>Performance-focused Web API built with <strong>.NET 9</strong> and <strong>Dapper (Micro-ORM)</strong>.</p>
-            <ul>
-                <li>Optimized SQL queries with <strong>PostgreSQL</strong> for One-to-Many relationships[cite: 35].</li>
-                <li>Applied the Repository Pattern and configured for Linux environments[cite: 36, 37].</li>
-            </ul>
-            <a href="https://github.com/Muhash123/RealEstateApi" class="project-link">View Repository</a>
-        </div>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    After spending nearly a decade in classrooms, I realized my real interest lay in the logic of the systems we use every day[cite: 12]. 
+                    I decided to start over, and I am currently a Master's student at <strong>UTCN</strong> and an <strong>MFA Scholarship recipient</strong>[cite: 13, 14, 66].
+                </p>
+                <p>
+                    I believe in steady, disciplined progress—a mindset that helped me reach <strong>B1 proficiency in Romanian</strong> in just one year[cite: 16, 83]. 
+                    Now, I apply that same persistence to mastering <strong>ASP.NET Core, MediatR, and SQL Server</strong>[cite: 16]. 
+                    I value clean code and I’m looking for an internship where I can work hard and learn from a senior team[cite: 17].
+                </p>
+            </div>
+        </section>
 
-        <div class="project-card">
-            <h3>Shop Management System API</h3>
-            <p>RESTful API using <strong>.NET 8.0</strong> for secure e-commerce operations[cite: 19, 21].</p>
-            <ul>
-                <li>Implemented <strong>JWT Authentication</strong> and RBAC[cite: 22].</li>
-                <li>Managed hierarchical data with <strong>EF Core</strong> and SQL Server[cite: 23].</li>
-            </ul>
-            <a href="https://github.com/Muhash123/Shop.git" class="project-link">View Repository</a>
-        </div>
+        <section id="projects">
+            <h2>Technical Projects</h2>
+            <div class="project-grid">
 
-        <div class="project-card">
-            <h3>Portfolio & CMS (.NET MVC)</h3>
-            <p>Dynamic blog engine using <strong>ASP.NET Core MVC</strong> and Entity Framework[cite: 26, 27, 28].</p>
-            <ul>
-                <li>Designed a custom, responsive UI using <strong>HTML and CSS</strong> without frameworks[cite: 30].</li>
-                <li>Integrated SQL Server to manage blog and profile content[cite: 29].</li>
-            </ul>
-            <a href="https://github.com/Muhash123/CV_Proyekt" class="project-link">View Repository</a>
-        </div>
+                <div class="project-card">
+                    <h3>Enterprise Real Estate API</h3>
+                    <p>
+                        I built this to master complex system organization. It uses <strong>Clean Architecture</strong> and 
+                        the <strong>CQRS pattern</strong> with <strong>MediatR</strong> to keep business logic decoupled[cite: 40, 41, 42].
+                    </p>
+                    <a href="https://github.com/Muhash123/RealEstate" class="project-link">View Source Code</a>
+                </div>
 
-    </div>
-</section>
+                <div class="project-card">
+                    <h3>High-Performance Real Estate Service</h3>
+                    <p>
+                        This project was an exercise in speed. Using <strong>.NET 9</strong> and <strong>Dapper</strong>, 
+                        I focused on optimized, raw SQL for <strong>PostgreSQL</strong> to handle data relationships efficiently[cite: 34, 35].
+                    </p>
+                    <a href="https://github.com/Muhash123/RealEstateApi" class="project-link">View Source Code</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Secure Shop Backend</h3>
+                    <p>
+                        A functional e-commerce API where I prioritized security. I implemented <strong>JWT Authentication</strong> 
+                        and <strong>Role-Based Access Control</strong> to protect sensitive endpoints[cite: 21, 22].
+                    </p>
+                    <a href="https://github.com/Muhash123/Shop.git" class="project-link">View Source Code</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Dynamic Portfolio Engine</h3>
+                    <p>
+                        Instead of a static page, I developed this as a full <strong>MVC application</strong>. 
+                        Content is managed through <strong>SQL Server</strong>, with a custom <strong>HTML/CSS</strong> UI[cite: 27, 29, 30].
+                    </p>
+                    <a href="https://github.com/Muhash123/CV_Proyekt" class="project-link">View Source Code</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammet Bashimov | Cluj-Napoca, Romania</p>
+    </footer>
+
+</body>
+</html>
